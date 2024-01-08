@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <!-- Thêm vào phần head của file HTML -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+<body class="bg-info">
+  <div class="row">
+    <div class=" col-sm-8 offset-sm-2" style="background-color: #ffffff; margin-top: 50px; padding: 20px">
+
+<a href="/add" class="btn btn-primary ">ADD tài khoản</a>
+<table class=" table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Tên</th>
+        <th>Giờ Vào </th>
+        <th>Giá</th>
+        <th>Trạng thái </th>
+        <th>Ngày Tháng</th>
+    </tr>
+    <% data.forEach(item => { %>
+     <tr>
+        <td><%= item.id %></td>
+        <td><%= item.ten %></td>
+        <td><%= item.giovao %></td>
+        <td><%= item.gia %></td>
+        <td><%= item.trangthai %></td>
+        <td><%= item.ngaythang %></td>
+        <td><a href="/delete/<%= item.id %>" class="btn btn-primary btn-sm"
+        onclick="return confirm("xóa?")">DEL</a>
+        <a href="/edit/<%= item.id %>" class="btn btn-primary btn-sm">Edit</a></td>
+    </tr>
+    <% }); %>
+
+    </div>
+  </div>
+
+</body>
+</html>
+

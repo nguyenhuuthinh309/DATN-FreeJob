@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group
+    android:checkableBehavior="single">
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Danh Sách Bài Đăng"
+        android:icon="@drawable/search_icon"
+        />
+
+    <item
+        android:id="@+id/lapct"
+        android:title="Thành Lập Công Ty"
+        android:icon="@drawable/search_icon"
+        />
+    <item
+        android:id="@+id/admin_danhsachyeucau"
+        android:title="Danh Sách yêu Cầu"
+        android:icon="@drawable/search_icon"
+        />
+    <item
+        android:id="@+id/thongbao"
+        android:title="Thông Báo"
+        android:icon="@drawable/search_icon"
+        />
+
+    ></group>
+</menu>

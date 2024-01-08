@@ -1,0 +1,31 @@
+<!-- views/add.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thêm mới đối tượng</title>
+  <!-- Thêm liên kết Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h2 class="mb-4">Thêm mới đối tượng</h2>
+        <form action="/add" method="post">
+          <div class="form-group">
+            <label for="newObject">Tên đối tượng:</label>
+            <input type="text" class="form-control" id="newObject" name="newObject" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Thêm mới</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Thêm liên kết Bootstrap JS và jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
